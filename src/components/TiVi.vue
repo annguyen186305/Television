@@ -1,5 +1,6 @@
 <template>
 <div class="TiVi">
+  <h1>TiVi Của An Nguyễn</h1>
   <div class="videoAndListVideo">
   <iframe  :src="onVideoURL"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -27,6 +28,9 @@ import CacKenh from "@/components/CacKenh.vue";
 
 export default {
   name: "TiVi",
+  props:{
+    tenTivi:String
+  },
   components: {
     CacKenh
   },
@@ -72,7 +76,7 @@ export default {
   padding: 10px;
   margin: 100px;
   width: 1200px;
-  height: 550px;
+  height: 650px;
   border: 5px solid cadetblue;
   background-color: wheat
 }
